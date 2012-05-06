@@ -20,6 +20,7 @@
 		$template = get_post_meta( $ID, '_wp_page_template', true );
 		$type = 'page';
 		if($template == 'page_blog.php') { $type = 'blog'; }
+		if($template == 'page_recent_work.php') { $type = 'recent_work'; }
 		
 		$query->the_post();
 		
@@ -43,7 +44,7 @@
 		}
 		
 	?>
-	<?php if($type == 'page') : ?>
+	<?php if($type != 'blog') : ?>
 	
 	<?php if($first == '' && $gray == false) { ?>
 	<div class="bg_top"></div>
