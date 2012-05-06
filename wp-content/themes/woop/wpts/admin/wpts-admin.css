@@ -1,0 +1,112 @@
+.wpts_wrap
+{
+	width: 740px;
+}
+
+#message
+{
+	margin: 0px;
+	width: 740px;
+	margin-top: 25px;
+}
+
+.setting-block
+{
+	border:1px solid #ddd;
+	padding: 0px;
+	background: #f9f9f9;
+	margin-bottom: 20px;
+}
+
+.save-bottom
+{
+	padding: 20px;
+	background: #eee;
+	text-align: right;
+}
+
+.block-title
+{
+	background-color: #eee;
+	padding: 20px;
+	padding-left: 20px;
+	margin-bottom: 20px;
+}
+
+.block-title h2
+{
+	color: #444;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	margin: 0px;
+}
+
+
+.wpts_input label
+{
+	font-size:12px;
+	font-weight:700;
+	width: 200px;
+	display:block;
+	float:left;
+	
+}
+
+.wpts_input 
+{
+	padding: 30px 20px;
+	border-bottom:1px solid #ddd;
+	border-top:1px solid #fff;
+	
+}
+
+.wpts_input span
+{
+	color: #676767;
+	padding-top: 5px;
+}
+
+.wpts_input small
+{
+	display: block;
+	float: right;
+	width: 200px;
+	color: #999;
+}
+
+.wpts_input input[type="text"], .wpts_input select
+{
+	width:280px;
+	font-size:12px;
+	padding:4px;
+	color:#333;
+	line-height:1em;
+	background:#f3f3f3;
+}
+
+.wpts_input input[type="checkbox"]
+{
+	border: 1px solid #888;
+}
+
+.wpts_input input:focus, .wpts_input textarea:focus
+{
+		background:#fff;
+}
+
+.wpts_input textarea
+{
+	width:280px;
+	height:175px;
+	font-size:12px;
+	padding:4px;
+	color:#333;
+	line-height:1.5em;
+	background:#f3f3f3;
+}
+
+.clearfix
+{
+	clear:both;
+}
+

@@ -1,0 +1,656 @@
+/********************************
+*	THE CSS OF ALL SHORTCODES
+/*********************************/
+
+.align-right 
+{
+	float: right;
+}
+.align-left 
+{
+	float: left;
+}
+.align-center 
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+.clearboth
+{
+	clear: both;
+	display: block;
+	font-size: 0px;
+	height: 0px;
+	line-height: 0;
+	width: 100%;
+	overflow:hidden;
+}
+
+.center
+{
+	text-align: center;
+
+}
+
+.left
+{
+	text-align: left;
+
+}
+
+.right
+{
+	text-align: right;
+
+}
+
+/*******************************
+*	DIVIDERS
+/*******************************/
+
+.divider 
+{
+	margin-top: 29px;
+	margin-bottom:30px;
+	height: 1px;	
+	background-color: #eee;
+	clear:both;
+	display:block;
+}
+
+.divider-empty
+{
+	margin-top: 29px;
+	margin-bottom:30px;
+	height: 1px;	
+	background-color: transparent;
+	clear:both;
+	display:block;
+}
+
+.divider.top
+{
+	text-align: right;
+	height: 15px;
+	background-color: transparent;
+	border-top: 1px solid #eee;
+}
+
+	.divider.top a 
+	{
+		position: relative;
+		width: 20px;
+		background-color: transparent;
+		font-size: 10px;
+		text-decoration:none;
+		color: #BBBBBB;
+		
+		padding: 0px 2px;
+	}
+	
+	.divider.top a:hover
+	{
+		color: #888;
+	}
+	
+.divider_image
+{
+	margin-top: 20px;
+	padding-top: 15px;
+	margin-bottom:30px;
+	clear:both;
+	display:block;
+	text-align: center;
+	background-repeat: repeat-x;
+	background-image: url("sc_images/pattern.png");
+}
+
+	.divider_image a 
+	{
+		position: relative;
+		width: 20px;
+		background-color: #FFFFFF;
+		font-size: 10px;
+		text-decoration:none;
+		color: #BBBBBB;
+		padding: 0px 2px;
+	}
+	
+	.divider_image a:hover
+	{
+		color: #888;
+	}
+	
+/*******************************
+*	HIGHLIGHT
+/*******************************/
+
+.highlight
+{
+	background-color: #FFFF99;
+	padding: 0px 2px;
+	text-shadow: none !important;
+}
+
+.highlight-dark
+{
+	background-color: #333333;
+	color: #FFFFFF;
+	text-shadow: none !important;
+}
+
+/*******************************
+*	QUOTES
+/*******************************/
+
+
+blockquote 
+{
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	color: #444;
+	line-height: 24px;
+	padding: 5px 5px 5px 45px;
+	/*background:url("sc_images/quote.png") no-repeat scroll 25px 6px transparent;*/
+	margin: 15px 10px;
+	font-style: italic;
+}
+
+blockquote p 
+{
+	margin-bottom: 10px;
+}
+
+blockquote.align-left 
+{
+	margin: 10px 20px 0 0;
+	width: 220px;
+}
+
+blockquote.align-right 
+{
+	margin: 10px 0 0 20px;
+	width: 220px;
+}
+
+.blockquote .cite
+{
+	/*color: #666;
+	font-size: 12px;*/
+	text-align: right !important;
+	
+}
+
+.blockquote p {
+	margin-bottom: 0;
+}
+
+/*******************************
+*	DROPCAPS
+/*******************************/
+
+.dropcap
+{
+	background:url("sc_images/dropcap_black.png") no-repeat scroll 0px 0px transparent;
+	color: #fff;
+	line-height: 38px;
+	width: 42px;
+	height: 40px;
+	margin: 0 8px -4px 0;
+	padding-right: 2px;
+	padding-bottom: 3px;
+	font-size: 24px;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+}
+
+.dropcap-black-gradient
+{
+	background:url("sc_images/dropcap_black_gradient.png") no-repeat scroll 0px 0px transparent;
+}
+
+/*******************************
+*	PRE CODE
+/*******************************/
+
+.code,.pre
+{
+	border: 1px solid #e0e0e0;
+	padding: 10px;
+	background: #ffffff;
+	white-space: pre-wrap;                 /* CSS3 browsers  */
+	white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
+	white-space: -pre-wrap;                /* Opera 4 thru 6 */
+	white-space: -o-pre-wrap;              /* Opera 7 and up */
+	overflow:auto;
+	display: block;
+	line-height: 20px;
+	font-family: Consolas, 'Bitstream Vera Sans Mono', 'Courier New', Courier, monospace;
+	/*margin-left: 25px;*/
+}
+.code 
+{
+	background:url("sc_images/bg_code.gif") repeat scroll 0 0 #e8e8e8;
+	padding:20px 10px;
+}
+
+/*******************************
+*	BOXES
+/*******************************/
+
+.msg-red, .box-error { background: #facccd; padding: 15px 40px; margin: 0px 0px 20px 0px; border: 1px solid #e29d9f; color: #b26b6d; font: 14px/16px 'TerminalDosisMedium', Arial, Helvetica, sans-serif;
+						-webkit-box-shadow: inset 0px 0px 3px 3px #f4bfc0;
+						-moz-box-shadow: inset 0px 0px 3px 3px #f4bfc0;
+						box-shadow: inset 0px 0px 3px 3px #f4bfc0;
+						}
+.msg-blue, .box-info, p.info { background: #ceedfd; padding: 15px 40px; margin: 0px 0px 20px 0px; border: 1px solid #96ceeb; color: #357ea5; font: 14px/16px 'TerminalDosisMedium', Arial, Helvetica, sans-serif; 
+						-webkit-box-shadow: inset 0px 0px 3px 3px #bfe7fd;
+						-moz-box-shadow: inset 0px 0px 3px 3px #bfe7fd;
+						box-shadow: inset 0px 0px 3px 3px #bfe7fd;
+						}
+
+ p.info a {
+	color: #244e63 !important;
+} 
+
+.msg-green, .box-success { background: #c9efa6; padding: 15px 40px; margin: 0px 0px 20px 0px; border: 1px solid #a3dc6e; color: #719f4a; font: 14px/16px 'TerminalDosisMedium', Arial, Helvetica, sans-serif;
+						-webkit-box-shadow: inset 0px 0px 3px 3px #bfea99;
+						-moz-box-shadow: inset 0px 0px 3px 3px #bfea99;
+						box-shadow: inset 0px 0px 3px 3px #bfea99;
+						} 
+.msg-yellow, .box-notice { background: #f8f0bb; padding: 15px 40px; margin: 0px 0px 20px 0px; border: 1px solid #ece0b; color: #b4a45e; font: 14px/16px 'TerminalDosisMedium', Arial, Helvetica, sans-serif;
+						-webkit-box-shadow: inset 0px 0px 3px 3px #e7ebbb;
+						-moz-box-shadow: inset 0px 0px 3px 3px #e7ebbb;
+						box-shadow: inset 0px 0px 3px 3px #e7ebbb;
+						}
+.msg-yellow strong, .box-notice  strong { color: #b4a45e; font: 14px/16px 'TerminalDosisSemiBold', Arial, Helvetica, sans-serif; font-weight: bold; }
+.msg-green strong, .box-success  strong { color: #719f4a; font: 14px/16px 'TerminalDosisSemiBold', Arial, Helvetica, sans-serif; font-weight: bold; }
+.msg-red strong, .box-error strong { color: #b26b6d; font: 14px/16px 'TerminalDosisSemiBold', Arial, Helvetica, sans-serif; font-weight: bold; }
+.msg-blue strong, .box-info strong { color: #357ea5; font: 14px/16px 'TerminalDosisSemiBold', Arial, Helvetica, sans-serif; font-weight: bold; }
+
+.msg-yellow a, .box-notice  a { color: #b4a45e; text-decoration: underline; }
+.msg-green a, .box-success  a { color: #719f4a; text-decoration: underline; }
+.msg-red a, .box-error a { color: #b26b6d; text-decoration: underline; }
+.msg-blue a, .box-info a { color: #357ea5; text-decoration: underline; }
+
+.msg-yellow p, .box-notice p,
+.msg-green p, .box-success p,
+.msg-red p, .box-error p,
+.msg-blue p, .box-info p{ margin-bottom:0px; }
+
+/*******************************
+*	COLUMNS
+/*******************************/
+	
+.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth 
+{
+	position: relative;
+	margin-right: 4%;
+	float: left;
+	margin-right: 4%; margin-bottom: 10px;
+}
+
+.one_half 
+{
+	width: 48%;
+}
+
+.one_third 
+{
+	width: 30.6666%;
+}
+
+.two_third
+ {
+	width: 65.3332%;
+}
+
+.one_fourth 
+{
+	width: 22%;
+}
+
+.two_fourth 
+{
+	width: 48%;
+}
+
+.three_fourth 
+{
+	width: 74%;
+}
+
+.one_fifth 
+{
+	width: 16.8%;
+}
+
+.two_fifth 
+{
+	width: 37.6%;
+}
+
+.three_fifth 
+{
+	width: 58.4%;
+}
+
+.four_fifth 
+{
+	width: 79.2%;
+}
+
+.one_sixth 
+{
+	width: 13.3333%;
+}
+
+.two_sixth 
+{
+	width: 30.6666%;
+}
+
+.three_sixth 
+{
+	width: 47.9998%;
+}
+
+.four_sixth
+ {
+	width: 65.3332%;
+}
+
+.five_sixth 
+{
+	width: 82.6665%;
+}
+
+.last 
+{
+	margin-right: 0px !important;
+	clear: right;
+}
+
+
+	.one_half .one_half 
+	{
+		margin-right: 8.3333%;
+		width: 45.8333%;
+	}
+	
+	.one_half .one_third 
+	{
+		margin-right: 8.3333%;
+		width: 27.7778%;
+	}
+	
+	.one_half .two_third 
+	{
+		margin-right: 8.3333%;
+		width: 63.8889%;
+	}
+	
+	.two_third .one_third 
+	{
+		margin-right: 6.1224%;
+		width: 29.2517%;
+	}
+	
+	.two_third .two_third
+	{
+		margin-right: 6.1224%;
+		width: 64.6258%;
+	}
+	
+	.two_third .one_fourth 
+	{
+		margin-right: 3%;
+		width: 22.4082%;
+	}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) 
+{
+	/* Safari and Google Chrome only - fix margins */
+	button.button span {
+		margin-top: -1px;
+		margin-left:-2px;
+		margin-right:-2px;
+	}
+}
+
+.button.small span {
+	font-size:10px;
+}
+.button.medium span {
+	font-size:13px;
+}
+.button.large span {
+	font-size:16px;
+}
+.button .btn-bold
+{
+	font-weight: bold;
+}
+
+
+/*******************************
+*	TOGGLE
+/*******************************/
+
+.toggle 
+{
+	position:relative;
+	margin-bottom:10px;
+}
+
+.toggle_title 
+{
+	margin:0;
+	padding: 9px 10px 5px 40px !important;
+	font-size:18px;
+	line-height:18px;
+	background: url("sc_images/toggle_buttons.png") no-repeat scroll -30px 7px transparent;
+	cursor:pointer;
+}
+
+.toggle_active 
+{
+	background-position: 0px -23px;
+}
+
+.toggle_content 
+{
+	padding:10px;
+	margin-top:5px;
+	margin-left:5px;
+	display:none;
+}
+
+
+/*******************************
+*	LIST
+/*******************************/
+
+ul.list1
+{
+	list-style-type:none !important;
+	margin-left:5px;
+}
+
+ul.list1 li 
+{
+	background-image:url("sc_images/list_styles_black.png");
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-color:transparent;
+	padding-left:28px;
+	margin:4px 0;
+}
+ul.list1 li
+{
+	background-position: -340px -3px;
+}
+
+ul.list_color_black li 
+{
+	background-image:url("sc_images/list_styles_black.png");
+}
+
+
+/*******************************
+*	TWITTER
+/*******************************/
+
+.twitter_wrap .tweet_list 
+{
+	list-style: none;
+	margin:0;
+}
+.twitter_wrap .tweet_list li 
+{
+	/*background: url("sc_images/widget_list_arrows.png") no-repeat scroll 3px -40px transparent;*/
+	padding:5px 5px 5px 22px;
+	line-height:inherit;
+	word-wrap: break-word;
+	margin:0;
+}
+.twitter_wrap .tweet_list a 
+{
+	background:none;
+	padding:0;
+}
+
+.twitter_wrap.with_avatar .tweet_list li, .widget_twitter .with_avatar .tweet_list li 
+{
+	background:none;
+	padding-left:0px;
+	overflow:hidden;
+}
+
+/*******************************
+*	FLICKR
+/*******************************/
+
+.flickr_wrap 
+{
+	position: relative;
+}
+.flickr_wrap .flickr_badge_image
+{
+	border:1px solid #eeeeee;
+	padding: 0;
+	float:left;
+	line-height:100%;
+	margin:0 10px 10px 0;
+}
+
+.flickr_wrap .flickr_badge_image img 
+{
+	width:75px;
+	height:75px;
+	border:1px solid #FFFFFF;
+	background-color:#F9F9F9;
+	display:block;
+}
+
+/*******************************
+*	RECENT AND POPULAR POST
+/*******************************/
+
+.posts_list 
+{
+	list-style: none;
+	margin: 0;
+}
+
+.posts_list p
+{
+	margin:0;
+}
+
+.posts_list li, .posts_list li, .posts_list li {
+	padding:5px 0;
+}
+
+.posts_list li a, .posts_list li a, .posts_list li a 
+{
+	background:none;
+	padding:0;
+	line-height:20px;
+}
+
+.posts_list .thumbnail, .posts_list .thumbnail, .posts_list .thumbnail
+{
+	display: block;
+	float: left;
+	margin: 4px 8px 8px 0;
+	line-height: 100%;
+	border: 1px solid #eee;
+}
+
+.posts_list .thumbnail img {
+	border: 1px solid #fff;
+	display: block;
+}
+
+table, td, th {
+	vertical-align: middle;
+}
+caption {
+	padding-bottom: 0.8em;
+}
+
+/*******************************
+*	TABLE
+/*******************************/
+
+.table_style
+{
+	border: 1px solid #dddddd;
+	margin-bottom:20px;
+}
+.table_style table
+{
+	text-align: left;
+	border-collapse: collapse;
+	border: 1px solid #fff;
+	width:100%;
+	padding:0;
+	margin:0;
+}
+.table_style th
+{
+	text-align:center;
+	padding:12px;
+	font-weight: normal;
+	font-size: 14px;
+	color: #555;
+	background-color:#EEEEEE;
+}
+.table_style tbody
+{
+	background: #F9F9F9;
+}
+.table_style td
+{
+	text-align:center;
+	padding: 10px;
+	color: #666;
+	border-top: 1px dashed #fff;
+}
+.table_style tbody tr:hover td
+{
+	color: #333;
+	background: #fff;
+	border-top: 1px solid #fff;
+}
+.table_style tfoot
+{
+	background-color:#f3f3f3;
+}
+.table_style tfoot td
+{
+	padding:8px;
+}
+

@@ -1,0 +1,14 @@
+/* */
+/* CUSTOMIZE YOUR NIVO THEME HERE, OVERWRITING THE STYLES RULES OF THE nivo/themes/default/default.css */
+/* OR CREATING NEW RULES TO YOUR SLIDER ID LIKE TEMPLATE BELLOW */
+/* */
+
+/*#mySlider 
+{
+    width: 618px;
+    height: 246px; 
+}*/
+
+.clear {
+	clear:both;
+}

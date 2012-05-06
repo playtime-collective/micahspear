@@ -1,0 +1,54 @@
+/********************************
+* THE CSS FILE OF SHORTCODE GENERATOR - DON'T EDIT THIS
+/********************************/
+
+#wpts-shortcodes textarea
+{
+	width: 100% !important;
+}
+
+	#wpts_main_sc
+	{
+		margin: 15px 0px;
+	}	
+	
+	#wpts_sub_sc
+	{
+		border-top: 1px solid #ccc;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		display: none;
+		line-height: 25px !important;
+	}
+	
+	.wpts_button
+	{
+		border: 1px solid #C3C3C3;
+		font-size: 12px;
+		text-decoration: none;
+		color: #464646;
+		padding: 2px 4px;
+		background-color: #eee;
+		margin: 3px 1px 4px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+	}
+	
+	#wpts_send
+	{
+		margin-top: 15px;
+		display: none;
+	}
+	
+	#wpts_sc_attrs
+	{
+		padding-top: 15px;
+		display: none;
+	}
+	
+		#wpts_sc_attrs div
+		{
+			margin-bottom: 10px;
+		}
+		
