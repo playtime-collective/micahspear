@@ -4,7 +4,9 @@
 $(document).ready(function(){
 	$("nav").sticky({topSpacing:0});
 	
-	/* CONTACT FORM */
+	$('.carousel').carousel({
+	  interval: false
+	})
 	
 	
 	

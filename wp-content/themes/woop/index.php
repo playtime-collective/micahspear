@@ -10,7 +10,7 @@
 	
 	$gray = true;
 	
-	$first = ' first';
+	$first = 'first';
 	
 	foreach($pages as $ID) {
 

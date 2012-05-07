@@ -26,11 +26,15 @@
 		wp_register_style( '960-style', THEME_DIR . '/css/960.css', array(), '1', 'all' );
 		wp_enqueue_style( '960-style' );
 		
+		/** REGISTER css/bootstrap.min.css **/
+		wp_register_style( 'bootstrap-style', THEME_DIR . '/css/bootstrap.min.css', array(), '1', 'all' );
+		wp_enqueue_style( 'bootstrap-style' );
+		
 		/** REGISTER css/styles.css **/
 		wp_register_style( 'main-style', THEME_DIR . '/css/styles.css', array(), '1', 'all' );
 		wp_enqueue_style( 'main-style' );
 		
-		/** REGISTER css/jquery.selectBox.cs **/
+		/** REGISTER css/jquery.selectBox.css **/
 		wp_register_style( 'wpts-shortcodes', THEME_DIR . '/wpts/shortcodes/wpts_shortcodes.css', array(), '1', 'all' );
 		wp_enqueue_style( 'wpts-shortcodes' );
 		
@@ -63,6 +67,10 @@
 	/** REGISTER js/jquery.easing-1.3.pack.js **/
 	wp_register_script( 'jquery-easing', THEME_DIR . '/js/jquery.easing-1.3.pack.js', array( 'jquery' ), '1.3', false );
 	wp_enqueue_script( 'jquery-easing' );
+	
+	/** REGISTER js/bootstrap.min.js **/
+	wp_register_script( 'bootstrap', THEME_DIR . '/js/bootstrap.min.js', array( 'jquery' ), '2.0.3', false );
+	wp_enqueue_script( 'bootstrap' );
 			
 	/** REGISTER fancybox/jquery.mousewheel-3.0.4.pack.js 
 	wp_register_script( 'jquery-mousewheel', THEME_DIR . '/fancybox/jquery.mousewheel-3.0.4.pack.js', array( 'jquery' ), '3.0.4', false );

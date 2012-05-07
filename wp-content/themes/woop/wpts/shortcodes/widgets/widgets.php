@@ -2,15 +2,16 @@
 
 // Enqueue the Twitter Script
 	wp_enqueue_script( 'jquery-tweet', get_template_directory_uri() . '/wpts/shortcodes/js/jquery.tweet.js', array('jquery'), NULL );
-	
+
+/*
 	wp_enqueue_script( 'jquery-pretty', get_template_directory_uri() . '/wpts/shortcodes/prettyphoto/js/jquery.prettyPhoto.js', array('jquery'), NULL );
-	
+
 	wp_enqueue_script( 'jquery-pretty-init', get_template_directory_uri() . '/wpts/shortcodes/prettyphoto/init.js', array('jquery'), NULL );
 	
 	wp_register_style( 'pretty-style', get_template_directory_uri() . '/wpts/shortcodes/prettyphoto/css/prettyPhoto.css', array(), '1', 'all' );
 	wp_enqueue_style( 'pretty-style' );
 
-	
+*/
 
 function wpts_sc_twitter($atts) 
 {
@@ -372,12 +373,80 @@ add_shortcode('recent_projects', 'wpts_sc_recent_projects');
 // custom recent work shortcode
 function wpts_sc_recent_work($atts) 
 {
-  extract(shortcode_atts(array(
+	extract(shortcode_atts(array(
 		'num' => -1,
 	), $atts));
 	
-	$loop = new WP_Query(array('post_type' => 'project', 'posts_per_page' => $num));
+	$count = 0; // init item counter
+	$column = 0; // init column counter
+	$colSize = 6; // column size
+	$loop = new WP_Query(array('post_type' => 'project', 'nopaging' => 'true'));
+	$itemsTotal = $loop->post_count;
+	
+	$grid = array('5', '6', '5');
+	$gc = 0;
+	
+	$html = '';
+	$html .= '<div id="myCarousel" class="gallery carousel">';
+	$html .= '<div class="carousel-inner">';
+	
+	while ( $loop->have_posts() ) : $loop->the_post();
+  	# columns display variables 
+    $isStartOfNewColumn = 0 === ($count % $colSize); // modulo
+    $isEndOfColumn = ($count && $isStartOfNewColumn);
+    $isStartOfNewColum && $column++; // update column counter
+
+    if ($isEndOfColumn) {
+      $html .= '</div>';
+    }
+
+    if ($isStartOfNewColumn) {
+		  $html .= '<div class="item active">';
+		}
+		
+		if($gc > 2) { $gc = 0; }
+		
+		$html .= '[raw]<div class="grid_'.$grid[$gc].' portfolio-item">[/raw]';
+		
+		$large = get_post_custom_values('projLink');
+		
+		$tags = '';
+		$terms = get_the_terms( get_the_ID(), 'tagportifolio' );
+    
+    $i = '';
+		$s = '';
+		if ( $terms && ! is_wp_error( $terms ) ) : 
+			foreach ( $terms as $term ) 
+			{
+				$name = $term->name;
+				$tags .= $i.$s.$name.' ';
+				$i = '/';
+				$s = ' ';
+			}
+		endif;
+		
+		$html .= '[raw]<a href="'.$large[0].'" class="single_image" rel="">';
+		$html .= '<div class="ss">'.get_the_post_thumbnail(get_the_ID(), 'portfolio-size').'</div></a>';
+		
+		$html .= '<p>'.get_the_title().'<br />';
+		$html .= '<span class="ss_text">'.$tags.'</span></p></div> <!-- end .grid_5 --> [/raw]';
+		
+		$gc++;
+	
+	  $count++;
+	
+	endwhile;
+	
+	$html .= '[raw]</div> <!-- end last item -->';
+	
+	$html .= '<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>';
+  $html .= '<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>';
   
+	$html .= '</div> <!-- end .carousel-inner -->';
+	$html .= '</div> <!-- end #myCarousel -->[/raw]';
+	
+	return $html;
+	
 }
 
 add_shortcode('recent_work', 'wpts_sc_recent_work');

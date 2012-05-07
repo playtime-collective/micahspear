@@ -913,3 +913,9 @@ blockquote.right {
 #respond input[type="submit"]:hover {
 	background-color: #e76658;
 }
+
+.carousel-control {
+  margin-top: 275px;
+  background: none;
+  border: none;
+}
