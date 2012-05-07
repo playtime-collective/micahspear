@@ -368,4 +368,18 @@ function wpts_sc_recent_projects($atts)
 
 add_shortcode('recent_projects', 'wpts_sc_recent_projects');
 
+
+// custom recent work shortcode
+function wpts_sc_recent_work($atts) 
+{
+  extract(shortcode_atts(array(
+		'num' => -1,
+	), $atts));
+	
+	$loop = new WP_Query(array('post_type' => 'project', 'posts_per_page' => $num));
+  
+}
+
+add_shortcode('recent_work', 'wpts_sc_recent_work');
+
 ?>
