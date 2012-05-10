@@ -454,6 +454,7 @@ span.ss_text {
 .social ul li {
 	display: inline;
 	margin-right: 15px;
+	float: left;
 }
 
 .icon.twitter {
