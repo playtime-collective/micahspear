@@ -10,7 +10,7 @@ Template Name: Blog
 			
 		<?php the_post(); ?>
 		
-		<div class="block white-block page first" id="">
+		<div class="block white-block page first"  id="post">
 			<div class="container_16">
 				
 				<div class="subheader">
@@ -47,7 +47,7 @@ Template Name: Blog
 						else: ?>
 							
 						<div class="error">
-                            <p><?php _e('Sorry! Not found posts with your criterias.', 'woop'); ?></p>
+                            <p><?php _e('Sorry! Not found posts with your criteria.', 'woop'); ?></p>
                         </div>
 								
 						<?php endif; ?>

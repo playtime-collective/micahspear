@@ -332,7 +332,7 @@ function wpts_sc_recent_projects($atts)
 			if($gc > 2) { $gc = 0; }
 			
 			$html .= '<div class="grid_'.$grid[$gc].' portfolio-item">';
-							
+			
 			$large = get_post_custom_values('projLink');
 			
 			$tags = '';
@@ -387,8 +387,8 @@ function wpts_sc_recent_work($atts)
 	$gc = 0;
 	
 	$html = '';
-	$html .= '<div id="myCarousel" class="gallery carousel">';
-	$html .= '<div class="carousel-inner">';
+	$html .= '<div id="slides" class="gallery">';
+	$html .= '<div class="slides_container">';
 	
 	while ( $loop->have_posts() ) : $loop->the_post();
   	# columns display variables 
@@ -401,12 +401,12 @@ function wpts_sc_recent_work($atts)
     }
 
     if ($isStartOfNewColumn) {
-		  $html .= '<div class="item active">';
+      $html .= '<div class="slide">';
 		}
 		
 		if($gc > 2) { $gc = 0; }
 		
-		$html .= '[raw]<div class="grid_'.$grid[$gc].' portfolio-item">[/raw]';
+		$html .= '[raw]<div class="grid_'.$grid[$gc].' portfolio-item item">[/raw]';
 		
 		$large = get_post_custom_values('projLink');
 		
@@ -425,23 +425,20 @@ function wpts_sc_recent_work($atts)
 			}
 		endif;
 		
-		$html .= '[raw]<a href="'.$large[0].'" class="single_image" rel="">';
-		$html .= '<div class="ss">'.get_the_post_thumbnail(get_the_ID(), 'portfolio-size').'</div></a>';
-		
+		$project_url = '' . get_permalink() . '#post-list';
+		$html .= '[raw]<a class="single_image" href=" ' . $project_url . '">';
+		$html .= '<div class="ss">'.get_the_post_thumbnail(get_the_ID(), 'portfolio-size').'</div>';
 		$html .= '<p>'.get_the_title().'<br />';
-		$html .= '<span class="ss_text">'.$tags.'</span></p></div> <!-- end .grid_5 --> [/raw]';
+		$html .= '<span class="ss_text">'.$tags.'</span></p></div></a> <!-- end .grid --> [/raw]';
 		
 		$gc++;
-	
+
 	  $count++;
 	
 	endwhile;
 	
 	$html .= '[raw]</div> <!-- end last item -->';
-	
-	$html .= '<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>';
-  $html .= '<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>';
-  
+
 	$html .= '</div> <!-- end .carousel-inner -->';
 	$html .= '</div> <!-- end #myCarousel -->[/raw]';
 	

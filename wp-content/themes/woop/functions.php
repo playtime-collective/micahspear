@@ -26,10 +26,6 @@
 		wp_register_style( '960-style', THEME_DIR . '/css/960.css', array(), '1', 'all' );
 		wp_enqueue_style( '960-style' );
 		
-		/** REGISTER css/bootstrap.min.css **/
-		wp_register_style( 'bootstrap-style', THEME_DIR . '/css/bootstrap.min.css', array(), '1', 'all' );
-		wp_enqueue_style( 'bootstrap-style' );
-		
 		/** REGISTER css/styles.css **/
 		wp_register_style( 'main-style', THEME_DIR . '/css/styles.css', array(), '1', 'all' );
 		wp_enqueue_style( 'main-style' );
@@ -68,9 +64,9 @@
 	wp_register_script( 'jquery-easing', THEME_DIR . '/js/jquery.easing-1.3.pack.js', array( 'jquery' ), '1.3', false );
 	wp_enqueue_script( 'jquery-easing' );
 	
-	/** REGISTER js/bootstrap.min.js **/
-	wp_register_script( 'bootstrap', THEME_DIR . '/js/bootstrap.min.js', array( 'jquery' ), '2.0.3', false );
-	wp_enqueue_script( 'bootstrap' );
+	/** REGISTER js/slides.min.jquery.js **/
+	wp_register_script( 'slides-jquery', THEME_DIR . '/js/slides.min.jquery.js', array( 'jquery' ), '1.3', false );
+	wp_enqueue_script( 'slides-jquery' );
 			
 	/** REGISTER fancybox/jquery.mousewheel-3.0.4.pack.js 
 	wp_register_script( 'jquery-mousewheel', THEME_DIR . '/fancybox/jquery.mousewheel-3.0.4.pack.js', array( 'jquery' ), '3.0.4', false );
@@ -150,7 +146,7 @@
 		'not_found' =>  __('No projects found'),
 		'not_found_in_trash' => __('No projects found in Trash'),
 		'parent_item_colon' => '',
-		'menu_name' => 'Project'
+		'menu_name' => 'Projects'
 
 	  );
 	  

@@ -11,22 +11,27 @@ $(document).ready(function() {
   var scrollElem = scrollableElement('html', 'body');
 
   $('a[href*=#]').each(function() {
-    var thisPath = filterPath(this.pathname) || locationPath;
-    if (  locationPath == thisPath
-    && (location.hostname == this.hostname || !this.hostname)
-    && this.hash.replace(/#/,'') ) {
-      var $target = $(this.hash), target = this.hash;
-      if (target) {
-        var targetOffset = $target.offset().top;
-        $(this).click(function(event) {
-          event.preventDefault();
-          $(scrollElem).animate({scrollTop: targetOffset}, 1300, function() { // scroll speed
-            location.hash = target;
+    if ($('a[href*=#post-list')) {
+      
+     } else {
+      var thisPath = filterPath(this.pathname) || locationPath;
+      if (  locationPath == thisPath
+      && (location.hostname == this.hostname || !this.hostname)
+      && this.hash.replace(/#/,'') ) {
+        var $target = $(this.hash), target = this.hash;
+        if (target) {
+          var targetOffset = $target.offset().top;
+          $(this).click(function(event) {
+            event.preventDefault();
+            $(scrollElem).animate({scrollTop: targetOffset}, 1300, function() { // scroll speed
+              location.hash = target;
+            });
           });
-        });
+        }
       }
     }
   });
+
 
   // use the first element that is "scrollable"
   function scrollableElement(els) {

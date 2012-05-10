@@ -57,7 +57,7 @@
 				<h2><span><?php echo $title; ?></span></h2>
 			</div>
 			
-			<div class="page-content">
+			<div class="page-content" name="post-list">
 				<?php the_content(); ?>
 			</div>
 			

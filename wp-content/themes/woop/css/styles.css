@@ -71,7 +71,8 @@ a:link {
 
 
 #intro {
-	background: url(../img/IMG_2029.JPG) repeat fixed;
+	background: url(../img/bg.jpg) fixed;
+	background-position: center;
 	height: 610px;
 	text-align: center;
 	margin: 0 auto;
@@ -333,7 +334,7 @@ blockquote.right {
 .subheader {
 	text-align: center;
 	margin-top: 70px;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 
 .subheader h2 {
@@ -367,8 +368,8 @@ blockquote.right {
 }
 
 .gallery .portfolio-item {
-	margin-top: 40px;
-	margin-bottom: 30px;
+	margin-top: 0px;
+	margin-bottom: 20px;
 }
 
 .gallery p {
@@ -699,11 +700,13 @@ footer p {
 	color: #faf4ec;
 }
 
-.single .post {
-	margin-top: 100px;
+div#post-list {
+  padding-top: 100px;
 }
 
-
+.single .post {
+	margin-top: 0px;
+}
 
 .single .meta {
 	margin-bottom: 30px;
@@ -914,8 +917,88 @@ blockquote.right {
 	background-color: #e76658;
 }
 
-.carousel-control {
-  margin-top: 275px;
-  background: none;
-  border: none;
+.gallery .item {
+  background-color: white;
+}
+
+.slides_container {
+	width: 100%;
+	display: none;
+}
+
+
+.slides_container div.slide {
+	width: 960px;
+	height: 500px;
+	display: block;
+}
+div#slides a.prev, div#slides a.next {
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  margin: 0;
+  padding: 0 10px 0 10px;
+  background: #B46B6B;
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+div#slides a.prev:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 45px;
+  width: 0;
+  height: 0;
+  border-color: transparent #B46B6B transparent transparent;
+  border-style: solid;
+  border-width: 12px 12px 12px 0;  
+}
+
+div#slides a.next:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -12px;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent transparent #B46B6B;
+  border-style: solid;
+  border-width: 12px 0 12px 12px;  
+}
+  
+div#slides a.prev {
+  float: left;
+  padding-left: 10px;
+  margin-left: 22px;
+}
+
+div#slides a.next {
+  float: right;
+  display: block;
+  padding-right: 10px;
+  margin-right: 22px;
+}
+
+.pagination {
+	list-style:none;
+	margin: -5px auto 0 auto;
+	width: 600px;
+	padding:0;
+	display: block;
+	text-align: center;
+}
+
+.pagination a {
+	background-color: #B46B6B;
+	font-size: 0;
+}
+
+.pagination .current a {
+	background-color: #9C4F4F;
+}
+
+ul.pagination li {
+  display: inline;
 }

@@ -1,15 +1,14 @@
-
-/* sticky bar */
-
 $(document).ready(function(){
+  
+  /* sticky bar */
 	$("nav").sticky({topSpacing:0});
-	
-	$('.carousel').carousel({
-	  interval: false
-	})
-	
-	
-	
+
+  /* recent work slider */
+	$('#slides').slides({
+		preload: true,
+		generateNextPrev: true
+	});
+
 });
 
 
