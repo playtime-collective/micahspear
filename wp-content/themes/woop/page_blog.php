@@ -10,7 +10,7 @@ Template Name: Blog
 			
 		<?php the_post(); ?>
 		
-		<div class="block white-block page first"  id="post">
+		<div class="block white-block page first"  id="">
 			<div class="container_16">
 				
 				<div class="subheader">

@@ -488,6 +488,10 @@ span.ss_text {
 	background-position: 0 -52px;
 }
 
+.social p {
+  width: 0px;
+}
+
 /********** skills *********/
 
 
