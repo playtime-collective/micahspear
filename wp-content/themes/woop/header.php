@@ -54,6 +54,7 @@
 		<?php else : ?>
 			<li><a href="<?php echo site_url('/'); ?>">home</a></li>
 		<?php endif; ?>
+		  <li><a href="?page_id=91#post-list">Blog</a></li>
 		
 	<?php
 	
@@ -98,6 +99,6 @@
 		endif;
 	}
 	?>
-	  <li><a href="?page_id=91#post-list">Blog</a></li>
+	  
 	</ul>
 </nav> <!-- end nav -->
