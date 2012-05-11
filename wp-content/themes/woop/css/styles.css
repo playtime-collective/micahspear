@@ -1011,4 +1011,5 @@ ul.pagination li {
 div.twitter_wrap {
   clear: both;
   border: 1px solid #f5f5f5;
+  padding: 15px 0;
 }
