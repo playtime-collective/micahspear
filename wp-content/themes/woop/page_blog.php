@@ -39,7 +39,7 @@ Template Name: Blog
 							</div>
 							
 							<div class="read-more">
-							<a href="<?php the_permalink(); ?>" class="read-more"><?php _e('Read More', 'woop'); ?></a>
+							<a href="<?php the_permalink(); ?>#post-list" class="read-more"><?php _e('Read More', 'woop'); ?></a>
 							</div>
 						
 						</div> <!-- .post -->
