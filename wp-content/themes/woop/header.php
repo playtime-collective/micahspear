@@ -85,7 +85,7 @@
 
 	
 	?>
-		<?php if($type != 'blog') : ?>
+		<?php if($type == 'page') : ?>
 			<?php if(!is_page() && !is_single()) : ?>
 				<li><a href="#<?php echo $tblockId; ?>"><?php echo $ttitle; ?></a></li>
 			<?php else : ?>
