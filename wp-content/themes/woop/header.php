@@ -67,7 +67,7 @@
 		
 		$template = get_post_meta( $tID, '_wp_page_template', true );
 		$type = 'page';
-		if($template == 'page_blog.php') { $type = 'blog'; }
+		//if($template == 'page_blog.php') { $type = 'blog'; }
 		
 		if($ttquery->have_posts()) :
 		
