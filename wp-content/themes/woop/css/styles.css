@@ -643,6 +643,10 @@ span.address {
 
 div.map_canvas img {
   border: 0px;
+  -webkit-box-shadow: 0px;
+  -moz-box-shadow: 0px;
+  box-shadow: 0px;
+  opacity: 1;
 }
 
 /*------------------------------------------------
