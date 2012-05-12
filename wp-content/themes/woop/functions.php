@@ -68,9 +68,9 @@
 	wp_register_script( 'slides-jquery', THEME_DIR . '/js/slides.min.jquery.js', array( 'jquery' ), '1.3', false );
 	wp_enqueue_script( 'slides-jquery' );
 			
-	/** REGISTER fancybox/jquery.mousewheel-3.0.4.pack.js 
+	/** REGISTER fancybox/jquery.mousewheel-3.0.4.pack.js **/
 	wp_register_script( 'jquery-mousewheel', THEME_DIR . '/fancybox/jquery.mousewheel-3.0.4.pack.js', array( 'jquery' ), '3.0.4', false );
-	wp_enqueue_script( 'jquery-mousewheel' ); **/
+	wp_enqueue_script( 'jquery-mousewheel' ); 
 	
 	/** REGISTER js/custom.script.js **/
 	wp_register_script( 'custom-script', THEME_DIR . '/js/custom.script.js', array( 'jquery' ), '1.0', false );
