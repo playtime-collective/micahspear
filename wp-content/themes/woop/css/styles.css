@@ -643,9 +643,9 @@ span.address {
 
 div.map_canvas img {
   border: 0px;
-  -webkit-box-shadow: 0px;
-  -moz-box-shadow: 0px;
-  box-shadow: 0px;
+  -webkit-box-shadow: 0px 0px 0px 0px #fff;
+  -moz-box-shadow: 0px 0px 0px 0px #fff;
+  box-shadow: 0px 0px 0px 0px #fff;
   opacity: 1;
 }
 
