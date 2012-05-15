@@ -32,10 +32,10 @@ Template Name: Blog
 						?>
 						<div class="post">
 						
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+							<h2><a href="<?php the_permalink(); ?>#post-list"><?php the_title(); ?></a></h2>
 							<div class="meta"><?php the_time( 'd' ); ?> <?php the_time( 'M' ); ?> <?php the_time( 'Y' ); ?> - <a href="<?php comments_link(); ?>"><?php comments_number( __('No Comments', 'woop'), __('1 Comment', 'woop'), '% '.__('Comments', 'woop') ); ?></a></div>
 							<div class="content">
-								<?php the_excerpt(); ?>
+								<?php the_content(); ?>
 							</div>
 							
 							<div class="read-more">
