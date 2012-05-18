@@ -277,9 +277,6 @@ nav a:hover {
 }
 
 .block img {
-	-webkit-box-shadow: 0px 0px 0px 7px #fff;
-	-moz-box-shadow: 0px 0px 0px 7px #fff;
-	box-shadow: 0px 0px 0px 7px #fff;
 	opacity: 0.8;
 	margin-top: 7px;
 }
