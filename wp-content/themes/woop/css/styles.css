@@ -1041,3 +1041,12 @@ div#footer div.column {
   margin: 10px 10px 10px 10px;
   width: 300px;
 }
+
+div#about img {
+  margin-right: 25px;
+}
+
+div#clients .block p {
+  display: block;
+  width: 100px;
+}
