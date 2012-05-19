@@ -1,5 +1,11 @@
 $(document).ready(function(){
   
+  $('a').smoothScroll({
+    offset: 0,
+    easing: 'swing',
+    speed: 400
+  });
+  
   /* sticky bar */
 	$("nav").sticky({topSpacing:0});
 

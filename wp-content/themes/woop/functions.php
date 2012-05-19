@@ -52,7 +52,7 @@
 	
 	/** REGISTER js/smooth-scroll.js **/
 	if(!is_single()) {
-	wp_register_script( 'jquery-smooth-scroll', THEME_DIR . '/js/smooth-scroll.js', array( 'jquery' ), '1.0', false );
+	wp_register_script( 'jquery-smooth-scroll', THEME_DIR . '/js/jquery.smooth-scroll.min.js', array( 'jquery' ), '1.0', false );
 	wp_enqueue_script( 'jquery-smooth-scroll' );
 	}
 	
