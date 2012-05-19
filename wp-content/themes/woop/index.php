@@ -85,8 +85,23 @@
 	}
 ?>
 
-
-	
-<?php
-	get_footer(); // get the footer.php file	
-?>
+<div id="footer" class="block gray-block ">
+  <div class="page-content">
+		<div class="column copy">
+		  <h3>About Micah</h3>
+		  <p>this is where some copy will go.</p>
+		</div>
+		<div class="column blog">
+		  <h3>Tumblr blog</h3>
+		  <p>this is where the blog post list will go.</p>
+		</div>
+		<div class="column contact">
+		  <h3>Contact</h3>
+		  <p>this is where the contact info will go.</p>
+		</div>
+	</div>
+  
+  <?php
+  	get_footer(); // get the footer.php file	
+  ?>
+</div>
