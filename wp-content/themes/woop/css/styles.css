@@ -1046,6 +1046,15 @@ div#about img {
   margin-right: 25px;
 }
 
+div#clients ul {
+  list-style: none;
+  margin: -5px auto 0 auto;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
 div#clients li {
   display: inline-block;
+  margin: 10px;
 }
