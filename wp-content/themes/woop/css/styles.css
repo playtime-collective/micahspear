@@ -1046,7 +1046,6 @@ div#about img {
   margin-right: 25px;
 }
 
-div#clients .block p {
-  display: block;
-  width: 100px;
+div#clients li {
+  display: inline-block;
 }
