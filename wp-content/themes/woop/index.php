@@ -93,7 +93,22 @@
 		</div>
 		<div class="column blog">
 		  <h3>Tumblr blog</h3>
-		  <p>this is where the blog post list will go.</p>
+		  <p>Most recent photo posts from Tumblr.</p>
+		  <style>
+
+      ul.tumblr-blog{
+        width: 300px;
+      }
+
+      ul.tumblr-blog li {
+        display: inline-block;
+        margin:5px;
+      }
+
+      </style>
+      <ul class="tumblr-blog">
+      </ul>
+
 		</div>
 		<div class="column contact">
 		  <h3>Contact</h3>
