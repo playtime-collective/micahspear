@@ -46,6 +46,7 @@ function wpts_sc_twitter($atts)
 		$with_avatar = ($avatarsize != 'null')?' with_avatar':'';
 		return <<<HTML
 <div class="twitter_wrap{$with_avatar}">
+  <h3>Recent Tweets:</h3>
 	<div id="twitter_wrap_{$id}"></div>
 	<div class="clearboth"></div>
 </div>
