@@ -446,6 +446,7 @@ span.ss_text {
 
 .social {
 	margin-top: 30px;
+	float: left;
 }
 
 .social ul li {
