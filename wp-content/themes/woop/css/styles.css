@@ -1027,6 +1027,10 @@ div.twitter_wrap {
   float: right;
 }
 
+div.twitter_wrap h3 {
+  margin-left: 22px;
+}
+
 div#footer {
   padding-bottom: 10px;
 }
