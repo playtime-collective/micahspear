@@ -27,6 +27,16 @@
 	if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 	?>
 	
+
+
+<!-- PIGPIGPIGPIGPIGPIGPIG -->
+
+<style>
+
+</style>
+
+
+
 </head>
 <!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
 <!--[if IE 7 ]>    <body class="ie7"> <![endif]-->

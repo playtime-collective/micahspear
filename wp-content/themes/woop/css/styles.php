@@ -601,7 +601,7 @@ span.ss_text {
 } 
 
 .contact_form input.submit-button {
-	background-color: #b46b6b;
+	background-color: #000000;
 	color: #faf4ec;
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
@@ -711,7 +711,7 @@ footer p {
 }
 
 .pagination a.active {
-	background-color: #b46b6b;
+	background-color: #000000;
 	color: #faf4ec;
 }
 
@@ -914,7 +914,7 @@ blockquote.right {
 } 
 
 #respond input[type="submit"] {
-	background-color: #b46b6b;
+	background-color: #000000;
 	color: #faf4ec;
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
