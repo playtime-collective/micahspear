@@ -91,7 +91,7 @@
     $post_id = 10;
     $my_post = get_post($post_id);
     $title = $my_post->post_title;
-    echo $my_post->post_content;
+    echo do_shortcode( $my_post->post_content );
     ?>
 		
 		<style>
