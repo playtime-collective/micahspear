@@ -88,6 +88,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-
-define('WP_HOME','http://ec2-50-17-60-123.compute-1.amazonaws.com');
-define('WP_SITEURL','http://ec2-50-17-60-123.compute-1.amazonaws.com/');

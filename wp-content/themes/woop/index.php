@@ -87,33 +87,22 @@
 
 <div id="footer" class="block gray-block ">
   <div class="page-content">
-		<div class="column copy">
-		  <h3>About Micah</h3>
-		  <p>this is where some copy will go.</p>
-		</div>
-		<div class="column blog">
-		  <h3>Tumblr blog</h3>
-		  <p>Most recent photo posts from Tumblr.</p>
-		  <style>
-
-      ul.tumblr-blog{
-        width: 300px;
-      }
-
-      ul.tumblr-blog li {
-        display: inline-block;
-        margin:5px;
-      }
-
-      </style>
-      <ul class="tumblr-blog">
-      </ul>
-
-		</div>
-		<div class="column contact">
-		  <h3>Contact</h3>
-		  <p>this is where the contact info will go.</p>
-		</div>
+    <?php 
+    $post_id = 10;
+    $my_post = get_post($post_id);
+    $title = $my_post->post_title;
+    echo $my_post->post_content;
+    ?>
+		
+		<style>
+    ul.tumblr-blog{
+      width: 300px;
+    }
+    ul.tumblr-blog li {
+      display: inline-block;
+      margin:5px;
+    }
+    </style>
 	</div>
   
   <?php

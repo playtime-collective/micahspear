@@ -1067,3 +1067,7 @@ div#clients li {
   display: inline-block;
   margin: 10px;
 }
+
+div.single div.page-content {
+  padding: 0 25px;
+}

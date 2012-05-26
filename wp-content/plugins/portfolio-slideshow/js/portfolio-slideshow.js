@@ -136,6 +136,8 @@
 						slideResize: false,
 						containerResize: false,
 						pager:  '#pager' + num,
+						pagerEvent: 'mouseover', 
+            fastOnEvent: true,
 						cleartypeNoBg: true,
 						pagerAnchorBuilder: buildAnchors
 					});

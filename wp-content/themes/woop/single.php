@@ -30,6 +30,8 @@
 			</div> <!-- end .container_16 -->
 		</div>
 		<div class="bg_bottom"></div>
+		
+	
 
 <?php
 	get_footer(); // get the footer.php file	

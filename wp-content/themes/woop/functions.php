@@ -123,6 +123,7 @@
 		/* ADD THEME SIZES HERE */
 		/*add_image_size( 'blog-size', 700, 290 );*/
 		add_image_size( 'portfolio-size', 280, 180, true );
+		add_image_size( 'project-gallery-size', 400, 250, true);
 	}
 	
 	/*== PORTFOLIO ==*/
