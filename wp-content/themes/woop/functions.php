@@ -51,10 +51,8 @@
 	wp_enqueue_script( 'html5-shin' );
 	
 	/** REGISTER js/smooth-scroll.js **/
-	if(!is_single()) {
 	wp_register_script( 'jquery-smooth-scroll', THEME_DIR . '/js/jquery.smooth-scroll.min.js', array( 'jquery' ), '1.0', false );
 	wp_enqueue_script( 'jquery-smooth-scroll' );
-	}
 	
 	/** REGISTER js/jquery.sticky.js **/
 	wp_register_script( 'jquery-sticky', THEME_DIR . '/js/jquery.sticky.js', array( 'jquery' ), '1.0', false );

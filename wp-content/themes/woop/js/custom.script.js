@@ -3,7 +3,8 @@ $(document).ready(function(){
   $('a').smoothScroll({
     offset: 0,
     easing: 'swing',
-    speed: 400
+    speed: 400,
+    excludeWithin: ['.gallery']
   });
   
   /* sticky bar */
