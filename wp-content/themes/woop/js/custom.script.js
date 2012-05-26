@@ -18,6 +18,7 @@ $(document).ready(function(){
 
   $.getJSON('http://micahman.tumblr.com/api/read/json?type=photo&num=9&callback=?',
   function(response) {
+    $('#footer .blog').append('<ul class="tumblr-blog"></ul>');
     for (i=0; i<=response.posts.length; i++) {
       var url = '<a href="' + response.posts[i].url + '">';
       var img = '<img src="' + response.posts[i]['photo-url-75'] + '"></img>';
