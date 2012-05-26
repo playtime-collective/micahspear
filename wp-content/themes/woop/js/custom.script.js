@@ -4,7 +4,7 @@ $(document).ready(function(){
     offset: 0,
     easing: 'swing',
     speed: 400,
-    excludeWithin: ['.gallery']
+    excludeWithin: ['.gallery', 'body.single']
   });
 
   /* sticky bar */
