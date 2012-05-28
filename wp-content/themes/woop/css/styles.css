@@ -372,6 +372,10 @@ blockquote.right {
 	margin-bottom: 0px;
 }
 
+div.slides_control {
+  height: 520px;
+}
+
 .gallery p {
 	margin-top: 14px;
 	font-size: 15px;
