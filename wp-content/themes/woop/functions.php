@@ -26,6 +26,10 @@
 		wp_register_style( '960-style', THEME_DIR . '/css/960.css', array(), '1', 'all' );
 		wp_enqueue_style( '960-style' );
 		
+		/** REGISTER fonts/stylesheet.css **/
+		wp_register_style( 'fonts-style', THEME_DIR . '/fonts/stylesheet.css', array(), '1', 'all' );
+		wp_enqueue_style( 'fonts-style' );
+		
 		/** REGISTER css/styles.css **/
 		wp_register_style( 'main-style', THEME_DIR . '/css/styles.css', array(), '1', 'all' );
 		wp_enqueue_style( 'main-style' );
