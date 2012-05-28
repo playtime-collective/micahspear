@@ -995,6 +995,7 @@ div#slides a.prev {
   float: left;
   padding-left: 10px;
   margin-left: 22px;
+  margin-top: 15px;
 }
 
 div#slides a.next {
@@ -1002,11 +1003,12 @@ div#slides a.next {
   display: block;
   padding-right: 10px;
   margin-right: 22px;
+  margin-top: 15px;
 }
 
 .pagination {
 	list-style:none;
-	margin: -5px auto 0 auto;
+	margin: 15px auto 0 auto;
 	width: 600px;
 	padding:0;
 	display: block;
