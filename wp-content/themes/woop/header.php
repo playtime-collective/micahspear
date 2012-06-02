@@ -33,6 +33,32 @@
 
 <style>
 
+@font-face {
+    font-family: 'TradeGothicBold';
+    src: url('tradegotbolcontwe-webfont.eot');
+    src: url('tradegotbolcontwe-webfont.eot?#iefix') format('embedded-opentype'),
+         url('tradegotbolcontwe-webfont.woff') format('woff'),
+         url('tradegotbolcontwe-webfont.ttf') format('truetype'),
+         url('tradegotbolcontwe-webfont.svg#TradeGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h2 {
+	font-family: 'TradeGothic', 'Maven Pro', sans-serif;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #464545;
+}
+
+h3 {
+	font-family: 'TradeGothicRegular', 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #545454;
+}
+
 p, div {
 	font-family: tahoma, arial, sans-serif;
 	font-weight: 100;
@@ -55,8 +81,9 @@ nav a:link {
 	font-weight: 300;
 	color: #4a4949;
 	text-transform: uppercase;
-	padding: 7px 30px 7px 30px;
+	padding: 11px 30px 9px 30px;
 	line-height: 18px;
+	font-family: 'TradeGothic';
 }
 
 .subheader {
@@ -65,19 +92,50 @@ nav a:link {
 	margin-bottom: 50px;
 }
 
+.gallery p {
+	margin-top: 14px;
+	font-size: 14px;
+	color: #555555;
+	text-align: center;
+	font-family: 'TradeGothic';
+	Text-transform: uppercase;
+	font-weight: 700;
+}
+
+span.ss_text {
+	color: #808080;
+	font-size: 13px;
+	text-transform:none;
+	font-weight:100;
+}
+
 div.twitter_wrap {
   clear: both;
-  border: 1px solid #f5f5f5;
-  padding: 15px 0;
-  background-color: white;
-  margin-top: 25px;
-  width: 268px;
+  border: none;
+  padding: none;
+  background-color: none;
+  margin-top: none;
 }
 
 div#slides a.prev {
   float: left;
   padding-left: 6px;
   margin-left: 22px;
+}
+
+div.twitter_wrap {
+  clear: both;
+  border: none;
+  padding: 0;
+}
+
+div.twitter_wrap h3 {
+  margin-left: 22px;
+  margin-bottom: 14px;
+}
+
+div.column.blog {
+	width:251px !important;
 }
 
 span.ss_text {
@@ -92,6 +150,7 @@ footer p {
 	text-transform: uppercase;
 	padding-top: 30px;
 	letter-spacing: .4em;
+	font-family:'TradeGothic' !important;
 }
 
 .alignleft, img.alignleft {
