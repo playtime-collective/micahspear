@@ -17,7 +17,7 @@ function wpts_sc_twitter($atts)
 {
 	extract(shortcode_atts(array(
 		'username' => '',
-		'count' => 3,
+		'count' => 4,
 		'query' => 'null',
 		'avatarsize' => 'null',
 	), $atts));
@@ -46,7 +46,7 @@ function wpts_sc_twitter($atts)
 		$with_avatar = ($avatarsize != 'null')?' with_avatar':'';
 		return <<<HTML
 <div class="twitter_wrap{$with_avatar}">
-  <h3>Recent Tweets:</h3>
+  <h3><img style="margin-right: 10px; margin-bottom: 15px;" src="http://ec2-50-17-60-123.compute-1.amazonaws.com/wp-content/uploads/footer-big-01.png" alt="">Recent Tweets by <a href="http://twitter.com/micahspear">@micahspear</a>:</h3>
 	<div id="twitter_wrap_{$id}"></div>
 	<div class="clearboth"></div>
 </div>
