@@ -16,7 +16,7 @@ $(document).ready(function(){
     generateNextPrev: true
   });
 
-  $.getJSON('http://micahman.tumblr.com/api/read/json?type=photo&num=9&callback=?',
+  $.getJSON('http://micahman.tumblr.com/api/read/json?type=photo&num=6&callback=?',
   function(response) {
     $('#footer .blog').append('<ul class="tumblr-blog"></ul>');
     for (i=0; i<=response.posts.length; i++) {
